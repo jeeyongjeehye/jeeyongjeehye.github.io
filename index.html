@@ -82,11 +82,26 @@
 
 		<div style="text-align: center; color: #ded3cf; margin: 1.2em 0"><span>LOCATION</span></div>
 
-		<!-- * 카카오맵 - 지도퍼가기 -->
-		<!-- 1. 지도 노드 -->
-		<div align="center" max-width="600px">
+		<div>
 			<!-- * 카카오맵 - 지도퍼가기 -->
-			<div id="daumRoughmapContainer1599812552037" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+			<!-- 1. 지도 노드 -->
+			<div id="daumRoughmapContainer1599813849216" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+			<!--
+				2. 설치 스크립트
+				* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+			-->
+			<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+			<!-- 3. 실행 스크립트 -->
+			<script charset="UTF-8">
+				new daum.roughmap.Lander({
+					"timestamp" : "1599813849216",
+					"key" : "22z4a",
+					"mapWidth" : "375",
+					"mapHeight" : "400"
+				}).render();
+			</script>
 		</div>
 
 		<div style="margin: 1em 0; border-bottom: 1px solid #ded3cf; color: #dac7c1; padding: 1em 0;">
@@ -103,15 +118,5 @@
 			[2호선 서초역] 8번 출구 앞
 		</p>
 		
-        
-		<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-		<script charset="UTF-8">
-			new daum.roughmap.Lander({
-				"timestamp" : "1599812552037",
-				"key" : "22z3s",
-				"mapWidth" : "375",
-				"mapHeight" : "400"
-			}).render();
-		</script>
 	</body>
 </html>
