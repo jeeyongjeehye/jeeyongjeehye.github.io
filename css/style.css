@@ -3,7 +3,6 @@
 *  Copyright (c) John Sundell 2019
 *  MIT license, see LICENSE file for details
 */
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Myeongjo&display=swap&subset=korean');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 * {
@@ -144,6 +143,14 @@ a {
 footer {
     color: #8a8a8a;
     padding: 2em 0;
+}
+
+.sns-list {
+    text-align: center;
+
+}
+.sns-list li {
+    display: inline-block;
 }
 
 @media (prefers-color-scheme: dark) {
