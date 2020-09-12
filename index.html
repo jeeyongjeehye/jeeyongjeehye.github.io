@@ -115,18 +115,16 @@
 		<footer>
 			<ul class="sns-list">
 				<li>
-					<a id="kakao-link-btn">
-						<img
-						  src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
-						/>
+					<a id="kakao-link-btn" href="javascript:sendLink()">
+						<img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_small.png" />
 					</a>
 					<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 					<script type="text/javascript">
-						Kakao.Link.createScrapButton({
-						container: '#kakao-link-btn',
-						requestUrl: 'https://jeeyongjeehye.github.io/'
-						});
-					
+					function sendLink() {
+						Kakao.Link.sendScrap({
+						requestUrl: 'https://jeeyongjeehye.github.io/',
+						})
+					}
 					</script>
 				</li>
 				<li>
